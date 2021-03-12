@@ -2,15 +2,12 @@ import pandas as pd
 import datetime as dt
 import streamlit as st
 import yfinance as yf
-from SPY_data import *
-import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import pickle
-from PIL import Image
-from plotly.subplots import make_subplots
-import quiverquant
 import time
+from PIL import Image
+from SPY_data import *
 
 st.sidebar.title("WallStBets S&P 500 Predictor & Analysis")
 option = st.sidebar.radio("Options:", ("Introduction","Ticker Mentions", "Ticker Sentiment", "Stock Lookup", "S&P 500 Analysis"))
